@@ -4,11 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## What this POC trying to solve
 
-This POC aims to achieve a multi-tenant build with CRACO and Webpack by overriding the default Webpack configuration. It allows you to configure the REACT_APP_BRAND environment parameter to prioritize specific file extensions if they exist.
+This project aims to achieve a multi-tenant build with [CRACO](https://github.com/gsoft-inc/craco) and Webpack by overriding the default Webpack configuration. It allows you to configure the `REACT_APP_BRAND` environment parameter to prioritize specific file extensions if they exist.
 
 ## Configuration
 
-To configure the multi-tenant build, you need to set the REACT_APP_BRAND environment parameter in the .env file. This parameter specifies what kind of file extensions to pick up as priority if they exist. For example, if you set REACT_APP_BRAND=my, the build system will prioritize files with the .my.ts or .my.tsx extension over files without the .my extension. If the BRAND extension is not present, the build system will fallback to the file without the BRAND extension.
+To configure the multi-tenant build, you need to set the `REACT_APP_BRAND` environment parameter in the `.env` file. This parameter specifies what kind of file extensions to pick up as priority if they exist. For example, if you set `REACT_APP_BRAND=my`, the build system will prioritize files with the `.my.ts` or `.my.tsx` extension over files without the .my extension. If the `BRAND` extension is not present, the build system will fallback to the file without the BRAND extension.
 
 ## Available Scripts
 
